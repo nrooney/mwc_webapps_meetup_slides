@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>CSSS: A brief introduction</title>
+	
+	<link href="slideshow.css" rel="stylesheet" />
+	<link href="theme.css" rel="stylesheet" />
+	<link href="talk.css" rel="stylesheet" />
+	<script src="prefixfree.min.js"></script>
+</head>
+<body data-duration="10">
+
+<section>
+	<header class="slide">
+		<h1>Mobile Web Apps Meetup</h1>
+		<p>WiFi: MWC2013_FREE_WIFI / mwc2013wifi</p>
+		<p>Moderator: http://bit.ly/ZDkQHM</p>
+	</header>
+</section>
+
+<section>
+	<header class="slide">
+		<h2>Chatham House Rules</h2>
+		<ul>
+			<li>Speak as individuals</li>
+			<li>Express views that may not be those of their organisations</li>
+			<li>Free discussion</li>
+		</ul>
+	</header>
+</section>
+
+<section>
+	<header class="slide">
+		<h2>Why are we here?</h2>
+		<p>HTML5 ecosystem for mobile and platform convergence</p>
+		<ul  class="delayed">
+			<li>Fast Canvas </li>    
+			<li >Better Audio Support</li>     
+			<li>DRM</li>     
+			<li>Camera</li>     
+			<li>Push Notifications</li>     
+			<li>Web GL</li>     
+			<li>Microphone</li>
+			<li>Packaged Applications</li>
+		</ul>
+	</header>
+</section>
+
+<section>
+	<header class="slide">
+		<h2>Moderator</h2>
+		<p>Google Moderator page can be found <a target="_blank" href="http://www.google.com/moderator/#15/e=1ff966&t=1ff966.40">here</a>.</p>
+	</header>
+</section>
+<footer class="slide" title="The End">
+	<h2>Thank you!</h2>
+</footer>
+
+<script src="slideshow.js"></script>
+<script src="plugins/css-edit.js"></script>
+<script src="plugins/css-snippets.js"></script>
+<script src="plugins/css-controls.js"></script>
+<script src="plugins/code-highlight.js"></script>
+<script>
+var slideshow = new SlideShow();
+
+var snippets = document.querySelectorAll('.snippet');
+for(var i=0; i<snippets.length; i++) {
+	new CSSSnippet(snippets[i]);
+}
+
+var cssControls = document.querySelectorAll('.css-control');
+for(var i=0; i<cssControls.length; i++) {
+	new CSSControl(cssControls[i]);
+}
+</script>
+	
+</body>
+</html>
